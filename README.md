@@ -4,15 +4,18 @@ Homebrew tap for apps by [@iwunkhaus](https://github.com/iwunkhaus).
 
 ## Install
 
+Homebrew requires third-party taps to be trusted explicitly before it will load
+them, so trust comes first:
+
 ```sh
+brew trust --cask iwunkhaus/tap/bosun
+brew tap iwunkhaus/tap
 brew install --cask iwunkhaus/tap/bosun
 ```
 
-Homebrew taps the repository automatically the first time. To tap it explicitly:
-
-```sh
-brew tap iwunkhaus/tap
-```
+To trust everything in this tap instead of one cask at a time, use
+`brew trust iwunkhaus/tap`. Trusted entries are recorded in
+`~/.homebrew/trust.json`.
 
 ## Casks
 
